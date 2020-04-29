@@ -71,7 +71,7 @@ pid_t create(Process pro)
 		for(int i = 0; i < pro.et; i++) unit();
 		syscall(GET_TIME,&end_sec,&end_nsec);
 		sprintf(dmesg, "[Project1] %d %lu.%09lu %lu.%09lu\n", _pid, start_sec, start_nsec, end_sec, end_nsec);
-		syscall(PRINTK, dmesg);
+		syscall(PRINTKK, dmesg);
 		exit(0);
 	}
 	return pid;
