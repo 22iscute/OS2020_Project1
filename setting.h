@@ -4,7 +4,7 @@
 #include <sys/types.h>
 #include <sys/syscall.h>
 #define GET_TIME 333
-#define PRINTK 334
+#define PRINTKK 334
 
 typedef struct process
 {
