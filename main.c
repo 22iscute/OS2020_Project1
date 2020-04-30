@@ -15,7 +15,7 @@ int main()
 	Process* processes;
 	processes = (Process*)malloc(N*sizeof(Process));
 	for(int i = 0; i < N; i++) scanf("%s%d%d", processes[i].name, &processes[i].rt, &processes[i].et);
-	for(; opt < 4; opt++) if(strcmp(pol, poli[opt])) break;
+	for(; opt < 4; opt++) if(strcmp(pol, poli[opt]) == 0) break;
 	qsort(processes, N, sizeof(Process), cmp);
 	scheduling(opt, processes, N);
 	return 0;
