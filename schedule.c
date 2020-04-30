@@ -83,7 +83,6 @@ int get_next_id(int opt, Process* processes, int N, int *id, int *cur_t, int* la
 	int tmp = -1;
 	if(opt == 0)
 	{
-		int tmp = -1;
 		for(int i = 0; i < N; i++)
 		{
 			if(processes[i].pid == -1 || processes[i].et == 0) continue;
